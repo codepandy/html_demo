@@ -44,3 +44,83 @@ body {
   box-shadow: inset 0 3px #111, inset 0 -3px #555;
 }
 
+.first-face{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-face{
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-face .pip:nth-of-type(2){
+  /*
+   * align-items用来设置会不起作用，
+   * align-items只能用在容器上，
+   * 在单个项目上的设置只能用align-self
+   */
+  align-self: flex-end;
+}
+
+/*.second{
+  align-self: flex-end;
+}*/
+
+.third-face{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-face .pip:nth-of-type(1){
+  align-self: flex-start;
+}
+
+.third-face .pip:nth-of-type(3){
+  align-self: flex-end;
+}
+
+
+.fourth-face{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-face .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face{
+  display: flex;
+  flex-direction: column;
+}
+
+.fifth-face .column{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2){
+  align-self: center;
+}
+
+.sixth-face{
+  display: flex;
+  flex-direction: column;
+}
+
+.sixth-face .column{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container{
+  border: 1px solid red;
+  width: 400px;
+  height: 400px;
+}
